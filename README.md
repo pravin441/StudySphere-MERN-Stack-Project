@@ -1,4 +1,4 @@
-# 📚 StudySphere – Student Learning and Assignment Management System
+# 📚 StudySphere – Assignment & Notes Management System
 
 **Learn. Share. Succeed.**
 
