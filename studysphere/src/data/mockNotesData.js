@@ -1,0 +1,85 @@
+// MOCK DATA — temporary, will be replaced by real API calls to
+// Node.js/Express/MongoDB once the backend is built.
+
+export const notesData = [
+  {
+    id: 1,
+    title: 'Introduction to React',
+    subject: 'Web Development',
+    description: 'Covers components, props, state, and JSX basics.',
+    fileType: 'PDF',
+    uploadedDate: '2026-07-15',
+    fileSize: '2.4 MB',
+  },
+  {
+    id: 2,
+    title: 'Database Normalization',
+    subject: 'DBMS',
+    description: 'Explains 1NF, 2NF, 3NF with examples.',
+    fileType: 'PDF',
+    uploadedDate: '2026-07-10',
+    fileSize: '1.8 MB',
+  },
+  {
+    id: 3,
+    title: 'OSI Model Basics',
+    subject: 'Computer Networks',
+    description: 'Layer-by-layer breakdown of the OSI reference model.',
+    fileType: 'DOCX',
+    uploadedDate: '2026-07-18',
+    fileSize: '900 KB',
+  },
+  {
+    id: 4,
+    title: 'JavaScript ES6 Features',
+    subject: 'Web Development',
+    description: 'Arrow functions, destructuring, template literals, and more.',
+    fileType: 'PDF',
+    uploadedDate: '2026-07-20',
+    fileSize: '3.1 MB',
+  },
+  {
+    id: 5,
+    title: 'SQL Joins Explained',
+    subject: 'DBMS',
+    description: 'Inner, left, right, and full outer joins with query examples.',
+    fileType: 'PPT',
+    uploadedDate: '2026-07-12',
+    fileSize: '4.5 MB',
+  },
+  {
+    id: 6,
+    title: 'TCP vs UDP',
+    subject: 'Computer Networks',
+    description: 'Key differences and use cases for both protocols.',
+    fileType: 'PDF',
+    uploadedDate: '2026-07-22',
+    fileSize: '1.2 MB',
+  },
+  {
+    id: 7,
+    title: 'Operating System Scheduling',
+    subject: 'Operating Systems',
+    description: 'FCFS, SJF, Round Robin scheduling algorithms explained.',
+    fileType: 'PDF',
+    uploadedDate: '2026-07-25',
+    fileSize: '2.0 MB',
+  },
+  {
+    id: 8,
+    title: 'React Hooks Deep Dive',
+    subject: 'Web Development',
+    description: 'useState, useEffect, useContext with practical examples.',
+    fileType: 'DOCX',
+    uploadedDate: '2026-07-28',
+    fileSize: '1.6 MB',
+  },
+];
+
+export const subjects = [
+  'All',
+  'Web Development',
+  'DBMS',
+  'Computer Networks',
+  'Operating Systems',
+];

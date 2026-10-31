@@ -1,0 +1,20 @@
+/* Additions on top of Login.css's shared .auth-page / .auth-card styles */
+
+.form-error {
+  background-color: #fef2f2;
+  color: var(--danger-color);
+  border: 1px solid #fecaca;
+  border-radius: var(--border-radius);
+  padding: 10px 14px;
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.terms-label {
+  align-items: flex-start;
+  line-height: 1.4;
+}
+
+.terms-label input {
+  margin-top: 3px;
+}

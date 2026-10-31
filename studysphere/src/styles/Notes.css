@@ -1,0 +1,140 @@
+.notes-page {
+  padding: var(--spacing-xl) 0;
+}
+
+.notes-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.notes-header p {
+  color: var(--muted-color);
+}
+
+/* ============ SEARCH BAR ============ */
+.search-bar {
+  margin-bottom: var(--spacing-md);
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 480px;
+  padding: 10px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--card-color);
+  font-size: var(--font-size-base);
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* ============ SUBJECT FILTERS ============ */
+.subject-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+}
+
+.filter-pill {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  color: var(--muted-color);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.filter-pill:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.filter-pill.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* ============ NOTES GRID ============ */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.note-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-card-header {
+  margin-bottom: var(--spacing-sm);
+}
+
+.file-type-badge {
+  display: inline-block;
+  background-color: #eff6ff;
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.note-card h3 {
+  margin-bottom: 4px;
+}
+
+.note-subject {
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  margin-bottom: var(--spacing-sm);
+}
+
+.note-description {
+  color: var(--muted-color);
+  font-size: var(--font-size-sm);
+  flex-grow: 1;
+  margin-bottom: var(--spacing-md);
+}
+
+.note-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.note-btn {
+  flex: 1;
+  padding: 8px;
+  font-size: var(--font-size-sm);
+}
+
+/* ============ EMPTY STATE ============ */
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+  color: var(--muted-color);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1024px) {
+  .notes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-bar input {
+    max-width: 100%;
+  }
+}

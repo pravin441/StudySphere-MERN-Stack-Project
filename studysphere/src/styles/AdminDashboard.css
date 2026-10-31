@@ -1,0 +1,143 @@
+.admin-dashboard {
+  padding: var(--spacing-xl) 0;
+}
+
+.admin-dashboard-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.admin-dashboard-header h1 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.admin-dashboard-header p {
+  color: var(--muted-color);
+}
+
+/* ============ STATS ============ */
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.admin-stat-card {
+  padding: var(--spacing-md);
+}
+
+.stat-label {
+  color: var(--muted-color);
+  font-size: var(--font-size-sm);
+  margin-bottom: 6px;
+}
+
+.admin-stat-card h2 {
+  font-size: var(--font-size-2xl);
+  color: var(--secondary-color);
+}
+
+/* ============ QUICK ACTIONS ============ */
+.admin-quick-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.admin-action-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-action-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.action-icon {
+  font-size: 1.5rem;
+}
+
+/* ============ DASHBOARD SECTION ============ */
+.admin-dashboard-section h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ============ ACTIVITY FEED ============ */
+.activity-card {
+  padding: 0;
+}
+
+.activity-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.activity-row:last-child {
+  border-bottom: none;
+}
+
+.activity-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  flex-shrink: 0;
+}
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-action {
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.activity-detail {
+  color: var(--muted-color);
+  font-size: var(--font-size-sm);
+}
+
+.activity-time {
+  color: var(--muted-color);
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1024px) {
+  .admin-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-quick-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-quick-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-row {
+    flex-wrap: wrap;
+  }
+
+  .activity-time {
+    margin-left: 18px;
+  }
+}

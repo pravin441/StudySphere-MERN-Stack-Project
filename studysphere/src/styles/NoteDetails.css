@@ -1,0 +1,147 @@
+.note-details-page {
+  padding: var(--spacing-xl) 0;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--muted-color);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+}
+
+/* ============ NOTE DETAILS CARD ============ */
+.note-details-card {
+  max-width: 720px;
+  margin-bottom: var(--spacing-xl);
+}
+
+.note-details-header {
+  margin-bottom: var(--spacing-md);
+}
+
+.note-details-header .file-type-badge {
+  margin-bottom: var(--spacing-sm);
+}
+
+.note-details-header h1 {
+  margin-bottom: 4px;
+}
+
+.note-subject {
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.note-full-description {
+  color: var(--muted-color);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* ============ METADATA ============ */
+.note-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-label {
+  color: var(--muted-color);
+  font-size: var(--font-size-sm);
+}
+
+.meta-value {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* ============ ACTIONS ============ */
+.note-details-actions {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.note-details-actions .btn {
+  padding: 10px 28px;
+}
+
+/* ============ RELATED NOTES ============ */
+.related-notes h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.related-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.related-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.related-card .file-type-badge {
+  display: inline-block;
+  background-color: #eff6ff;
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.related-card h3 {
+  margin-bottom: 4px;
+}
+
+/* ============ EMPTY STATE ============ */
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+  color: var(--muted-color);
+}
+
+.empty-state .btn {
+  margin-top: var(--spacing-md);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .note-meta {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .note-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .note-details-actions {
+    flex-direction: column;
+  }
+}

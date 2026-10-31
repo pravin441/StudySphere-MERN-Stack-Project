@@ -1,0 +1,152 @@
+.assignments-page {
+  padding: var(--spacing-xl) 0;
+}
+
+.assignments-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.assignments-header p {
+  color: var(--muted-color);
+}
+
+/* ============ STATUS FILTERS ============ */
+.status-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+}
+
+.filter-pill {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  color: var(--muted-color);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.filter-pill:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.filter-pill.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* ============ ASSIGNMENTS LIST ============ */
+.assignments-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.assignment-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+}
+
+.assignment-main {
+  flex: 1;
+}
+
+.assignment-top {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: 4px;
+}
+
+.assignment-subject {
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.assignment-description {
+  color: var(--muted-color);
+  font-size: var(--font-size-sm);
+  margin-bottom: 6px;
+}
+
+.assignment-due {
+  color: var(--muted-color);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.assignment-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  flex-shrink: 0;
+}
+
+.assignment-actions .btn {
+  white-space: nowrap;
+  padding: 8px 20px;
+  font-size: var(--font-size-sm);
+}
+
+/* ============ STATUS BADGES ============ */
+.status-badge {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.status-pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-due-soon {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.status-submitted {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.status-completed {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+/* ============ EMPTY STATE ============ */
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+  color: var(--muted-color);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 640px) {
+  .assignment-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .assignment-actions {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .assignment-actions .btn {
+    flex: 1;
+    text-align: center;
+  }
+}

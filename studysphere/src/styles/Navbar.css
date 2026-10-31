@@ -1,0 +1,112 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.navbar-logo {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.navbar-logo span {
+  color: var(--primary-color);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+.navbar-links a {
+  position: relative;
+  color: var(--muted-color);
+  font-weight: 500;
+  font-size: var(--font-size-base);
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:not(.btn)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width var(--transition-base);
+}
+
+.navbar-links a:not(.btn):hover::after {
+  width: 100%;
+}
+
+.navbar-links a:hover {
+  color: var(--primary-color);
+}
+
+.navbar-cta {
+  color: #ffffff !important;
+  padding: 8px 18px;
+}
+
+.navbar-cta:hover {
+  color: #ffffff !important;
+  background-color: var(--primary-dark);
+}
+
+/* Hamburger button - hidden on desktop */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  padding: 4px;
+}
+
+.navbar-toggle span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--text-color);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background-color: var(--card-color);
+    border-bottom: 1px solid var(--border-color);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--spacing-md);
+    gap: var(--spacing-md);
+    display: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}

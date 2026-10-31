@@ -1,0 +1,139 @@
+.assignment-details-page {
+  padding: var(--spacing-xl) 0;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--muted-color);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+}
+
+.assignment-details-card {
+  max-width: 720px;
+}
+
+.assignment-details-header {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.assignment-details-header .status-badge {
+  margin-bottom: var(--spacing-sm);
+  display: inline-block;
+}
+
+.assignment-details-header h1 {
+  margin-bottom: 4px;
+}
+
+.assignment-subject {
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.details-block {
+  margin-bottom: var(--spacing-lg);
+}
+
+.details-block h3 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-sm);
+}
+
+.details-block p {
+  color: var(--muted-color);
+  line-height: 1.7;
+}
+
+.assignment-meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-label {
+  color: var(--muted-color);
+  font-size: var(--font-size-sm);
+}
+
+.meta-value {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.assignment-details-actions .btn {
+  padding: 12px 32px;
+}
+
+.submission-info {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+}
+
+.submission-info p {
+  color: var(--text-color);
+  font-size: var(--font-size-sm);
+}
+
+.status-badge {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.status-pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-due-soon {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.status-submitted {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.status-completed {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+  color: var(--muted-color);
+}
+
+.empty-state .btn {
+  margin-top: var(--spacing-md);
+}
+
+@media (max-width: 480px) {
+  .assignment-meta {
+    grid-template-columns: 1fr;
+  }
+}
